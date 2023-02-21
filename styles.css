@@ -2,7 +2,7 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: hsl(212deg, 45%, 89%);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,26 +11,29 @@ body {
 
 .qr-code-container {
   text-align: center;
-  padding: 15px;
+  padding: .9375rem;
   background-color: white;
-  max-width: -moz-min-content;
-  max-width: min-content;
+  max-width: 320px;
   border-radius: 20px;
 }
 .qr-code-container .image {
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  max-width: 100%;
 }
+
 .qr-code-container .details {
-  width: 85%;
-  margin: 0 auto;
+  font-size: 0.9375rem;
 }
-.qr-code-container .details .title {
-  font-size: 22px;
-  font-weight: 700;
-}
+
 .qr-code-container .details .description {
-  font-size: 15px;
   color: hsl(220deg, 15%, 55%);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
